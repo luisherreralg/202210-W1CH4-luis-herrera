@@ -24,3 +24,14 @@ $orange-color: #ed6436;
     object-fit: cover;
     border-radius: 20px;
 }
+
+@mixin img-dskt {
+    width: 30vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@mixin div-dskt {
+    visibility: hidden;
+}
