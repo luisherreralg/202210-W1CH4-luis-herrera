@@ -1,3 +1,257 @@
-h1 {
-    color: white;
+@use "variables";
+@media screen and (max-width: 640px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        overflow: auto;
+        header {
+            background-color: #ffffff;
+            min-height: 3vh;
+            box-shadow: 0 0.5px 5px rgba(0, 0, 0, 0.411);
+            nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 0.5em;
+                padding-top: 2px;
+                img {
+                    width: 20px;
+                    height: 20px;
+                    object-fit: cover;
+                }
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    div {
+                        height: 1px;
+                        width: 15px;
+                        background-color: black;
+                        border-radius: 100px;
+                    }
+                }
+            }
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            section:nth-of-type(1) {
+                div {
+                    margin-block-start: 1em;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        h1 {
+                            font-size: 0.8em;
+                            color: variables.$orange-color;
+                            @include variables.delete-nav-style;
+                        }
+                        h2 {
+                            font-size: 1.5em;
+                            @include variables.delete-nav-style;
+                        }
+                    }
+                    button {
+                        background-color: variables.$orange-color;
+                        border: 0;
+                        border-radius: 0px 20px 20px 20px;
+                        color: white;
+                        padding: 6px;
+                        font-size: 0.3em;
+                    }
+                }
+            }
+            section:nth-of-type(2) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+                img {
+                    @include variables.img;
+                }
+                div {
+                    @include variables.div;
+                    h3 {
+                        @include variables.delete-nav-style;
+                    }
+                    p {
+                        @include variables.delete-nav-style;
+                    }
+                }
+            }
+            section:nth-of-type(3) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    @include variables.img;
+                }
+                div {
+                    @include variables.div;
+                    h3 {
+                        @include variables.delete-nav-style;
+                    }
+                    p {
+                        @include variables.delete-nav-style;
+                    }
+                }
+            }
+            section:nth-of-type(4) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    @include variables.img;
+                }
+                div {
+                    @include variables.div;
+                    h3 {
+                        @include variables.delete-nav-style;
+                    }
+                    p {
+                        @include variables.delete-nav-style;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 640px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        header {
+            background-color: #ffffff;
+            min-height: 8vh;
+            box-shadow: 0 0.5px 5px rgba(0, 0, 0, 0.411);
+            nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 0.5em;
+                padding-top: 2px;
+                img {
+                    width: 70px;
+                    height: 70px;
+                    object-fit: cover;
+                }
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    div {
+                        height: 1px;
+                        width: 40px;
+                        background-color: black;
+                        border-radius: 100px;
+                    }
+                }
+            }
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            section:nth-of-type(1) {
+                width: 100%;
+                height: 100%;
+
+                div {
+                    margin-block-start: 1em;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    padding: 1em;
+                    justify-content: center;
+                    align-items: center;
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        h1 {
+                            font-size: 2em;
+                            color: variables.$orange-color;
+                            @include variables.delete-nav-style;
+                        }
+                        h2 {
+                            font-size: 3em;
+                            @include variables.delete-nav-style;
+                        }
+                    }
+
+                    button {
+                        width: 200px;
+                        height: 50px;
+                        background-color: variables.$orange-color;
+                        border: 0;
+                        border-radius: 0px 20px 20px 20px;
+                        color: white;
+                        padding: 15px;
+                        font-size: 1.2em;
+                    }
+                }
+            }
+            section:nth-of-type(2) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+                img {
+                    @include variables.img;
+                }
+                div {
+                    @include variables.div;
+                    h3 {
+                        @include variables.delete-nav-style;
+                    }
+                    p {
+                        @include variables.delete-nav-style;
+                    }
+                }
+            }
+            section:nth-of-type(3) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    @include variables.img;
+                }
+                div {
+                    @include variables.div;
+                    h3 {
+                        @include variables.delete-nav-style;
+                    }
+                    p {
+                        @include variables.delete-nav-style;
+                    }
+                }
+            }
+            section:nth-of-type(4) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    @include variables.img;
+                }
+                div {
+                    @include variables.div;
+                    h3 {
+                        @include variables.delete-nav-style;
+                    }
+                    p {
+                        @include variables.delete-nav-style;
+                    }
+                }
+            }
+        }
+    }
 }
