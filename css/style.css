@@ -1,5 +1,98 @@
-h1 {
-  color: white;
+@media screen and (max-width: 640px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+  body header {
+    background-color: #ffffff;
+    min-height: 3vh;
+    box-shadow: 0 0.5px 5px rgba(0, 0, 0, 0.411);
+  }
+  body header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0.5em;
+    padding-top: 2px;
+  }
+  body header nav img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+  }
+  body header nav div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  body header nav div div {
+    height: 1px;
+    width: 15px;
+    background-color: black;
+    border-radius: 100px;
+  }
+  body main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main section:nth-of-type(1) {
+    margin-block-start: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  body main section:nth-of-type(1) h1 {
+    font-size: 0.8em;
+    color: #ed6436;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  body main section:nth-of-type(1) h2 {
+    font-size: 1.5em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  body main section:nth-of-type(1) button {
+    background-color: #ed6436;
+    border: 0;
+    border-radius: 0px 20px 20px 20px;
+    color: white;
+    padding: 6px;
+    font-size: 0.3em;
+  }
+  body main section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main section:nth-of-type(2) img {
+    width: 75vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  body main section:nth-of-type(2) div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: -200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  body main section:nth-of-type(2) div h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  body main section:nth-of-type(2) div p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
