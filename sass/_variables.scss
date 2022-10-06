@@ -1,11 +1,16 @@
 $orange-color: #ed6436;
+$nunito: "Nunito", sans-serif;
 
 @mixin delete-nav-style {
     margin-block-start: 0;
     margin-block-end: 0;
 }
 
+@mixin div-dskt {
+    visibility: hidden;
+}
 @mixin div {
+    visibility: inherit;
     padding: 0 0 10px 0;
     width: 100%;
     position: relative;
@@ -26,12 +31,8 @@ $orange-color: #ed6436;
 }
 
 @mixin img-dskt {
+    height: 50vh;
     width: 30vw;
-    height: auto;
     object-fit: cover;
     border-radius: 20px;
-}
-
-@mixin div-dskt {
-    visibility: hidden;
 }
